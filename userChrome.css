@@ -1,0 +1,19 @@
+/*
+ * Do not remove the @namespace line -- it's required for correct functioning
+ */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
+
+menubar, toolbar, #TabsToolbar > *{
+  background-color: rgb(37, 37, 37) !important;
+}
+
+#nav-bar > * {
+  background-color: rgb(57, 57, 57) !important;
+}
+
+.tabbrowser-tabs[selected="false"] {
+  background-image: none !important;
+  background-color: rgb(17, 17, 17) !important;
+}
+
+browser { background-color: #373739 !important; }
