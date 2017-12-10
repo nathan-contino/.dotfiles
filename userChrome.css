@@ -1,19 +1,40 @@
-/*
- * Do not remove the @namespace line -- it's required for correct functioning
- */
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
-
-menubar, toolbar, #TabsToolbar > *{
-  background-color: rgb(37, 37, 37) !important;
+.autocomplete-richlistbox {
+        background: rgb(27, 27, 27) !important;
+        color: #AAAAAA !important;
 }
 
-#nav-bar > * {
-  background-color: rgb(57, 57, 57) !important;
+.autocomplete-textbox-container.urlbar-textbox-container
+{color:#AAAAAA!important;}
+
+* {
+	font-family: inherit !important;
 }
 
-.tabbrowser-tabs[selected="false"] {
-  background-image: none !important;
-  background-color: rgb(17, 17, 17) !important;
+html {
+	font-family: 'Ubuntu' !important;
 }
 
-browser { background-color: #373739 !important; }
+.autocomplete-richlistbox {
+        color: #BBBBBB !important;
+}
+
+.ac-title {
+  color: #CCCCCC !important;
+}
+
+#urlbar[level] .autocomplete-textbox-container >* {
+color: #AAAAAA !important;
+}
+
+.tabbrowser-tab[selected="true"] {
+font-weight: bold !important;
+color: rgba(255,255,255,1) !important;
+background-image: linear-gradient(rgb(27, 27, 27), rgb(27, 27, 27) 50%),
+linear-gradient(-moz-dialog, -moz-dialog) !important;
+}
+
+.tabbrowser-tab {
+font-weight: bold !important;
+background-image: linear-gradient(rgb(27,27,27), rgb(27,27,27) 50%),
+linear-gradient(-moz-dialog, -moz-dialog) !important;
+}
